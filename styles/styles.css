@@ -16,7 +16,7 @@ h1 {
 img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 3px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -24,3 +24,27 @@ img {
 p {
     padding: 10px;
 }
+
+aside {
+    width: 20em;
+    margin: 1em;
+    border: 3px solid rgba(114, 109, 109, 0.2);
+    padding: 1em;
+    background-color: lightblue;
+    color: #333;
+    text-align: center;
+  }
+
+  aside img {
+    width: 200px;
+    height: auto;
+    border: 3px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+  }
+
+  footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
