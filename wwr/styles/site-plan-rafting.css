@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap');
 :root {
     --primary-color: #DCE1E9;
     --secondary-color: #8FC3CB;
     --accent1-color: #1A1A80;
     --accent2-color: #0F0636;
   
-    --heading-font: 'PT-Serif', serif;
-    --paragraph-font: 'PT-Serif', serif;
+    --heading-font: 'Tilt Prism', serif;
+    --paragraph-font: 'Shantell Sans', serif;
   
     --nav-background-color: #1A1A80;
     --nav-link-color: #8FC3CB;
@@ -34,6 +33,7 @@ header {
 
 p {
     padding: 20px;
+    font-family: var(--paragraph-font);
 }
 
 
