@@ -18,21 +18,22 @@
 body {
     max-width: 960px;
     padding: 25px;
+    font-family: var(--paragraph-font);
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
 }
 
 header {
-    padding: 25px;
+    padding: 20px;
     background-color: var(--secondary-color);
 }
 
 p {
-    padding: 20px;
+    padding: 25px;
     font-family: var(--paragraph-font);
 }
 
