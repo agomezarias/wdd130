@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap');
+:root {
+    --primary-color: #DCE1E9;
+    --secondary-color: #8FC3CB;
+    --accent1-color: #1A1A80;
+    --accent2-color: #0F0636;
+  
+    --heading-font: 'Tilt Prism', serif;
+    --paragraph-font: 'Shantell Sans', serif;
+  
+    --nav-background-color: #1A1A80;
+    --nav-link-color: #8FC3CB;
+    --nav-hover-link-color: #0F0636;
+    --nav-hover-background-color: #DCE1E9;   
+}
+
+* {
+
+    max-width: 960px;
+	margin: 0;
+    padding: 0;
+}
+
+
+header {
+    padding: 20px;
+    background-color: auto;
+    display: absolute;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    opacity: .8;
+    position: relative;
+    bottom: 500px;
+    
+}
+
+
+.article img{
+    position: relative;
+    width: 20%;
+    bottom: x
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding: 20px;
+}
+
+p {
+    padding: 20px;
+    font-family: var(--paragraph-font);
+}
+
+nav {
+    background-color: auto;
+    font-size: 1rem;
+    position: relative;
+    top: 10px;
+  }
+nav a {
+    display: right;
+    color: var(--nav-background-color);
+    text-decoration: none;
+    padding: 1.5rem;
+  }
+
+.herodiv {
+    position: absolute;
+    height: auto;
+
+}
+
+.herodiv img {
+	position: relative;
+	width: 50%;
+    height:auto
+}
+
+.footer {
+	position: absolute;
+    /* height: auto; */
+	bottom: 200;
+	margin: 1rem;
+	border-top: 2px solid #000;
+	padding: 0.5rem;
+	color: navy;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.socialmedia img {
+    position: relative;
+    right: right;
+    width: 5%;
+    padding: .5rem;
+}
+
+/* .socialmedia nav {
+    width: 5%;
+    orientation: landscape;
+} */
