@@ -55,6 +55,7 @@ header {
 
 .article img {
     position: absolute;
+    float: right;
     width: 18%;
     top: 780px;
     left: 100px;

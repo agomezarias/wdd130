@@ -1,0 +1,65 @@
+.flexbox-container {
+    display: flex;
+    /* These are different options for the
+    flex box spacing. */
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-start; */ 
+    /* Keeps original starting point and spacing */
+    /* justify-content: center; */
+    /* Centers and spaces evenly across */
+    /* justify-content: space-between; */
+    /* equal amount of space on all sides */
+    /* justify-content: space-around; */
+    /* align-items: stretch; */
+    /* default sets items to use all space possible */
+    /* align-items: flex-start; */
+    /* align-items: center: */
+    /* Centers items vertically */
+    /* align-content: space-between; */
+    /* flex-direction: column; */
+    /* up and down instead of horizontal */
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+    flex-shrink: 0;
+    /* stops box from shrinking */
+    /* flex flex-basis: 0; */
+    /* starts at 0 intead of the width */
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+    flex-grow: 1;
+/* Both item 2 and 3 will grow evenly to fill browser
+when set to grow on both. */
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    /* grows the last box to fill browser */
+}
+
+
+/* order property will put item in order that it should go. 
+.frog {
+order: #
+} */
+
+
+/* flex-flow will combine flex options as a shorthand to do 
+multiple things in one line of code. 
+flex-flow: column wrap;
+flex-flow:  row wrap;
+ */
+
+ /* align-content: will determine space between lines as oppose to
+ align-items which align items as a whole. */
