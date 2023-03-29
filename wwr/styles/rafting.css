@@ -40,26 +40,33 @@ header {
     grid-template-columns: 1fr 2fr;
     padding: 1rem;
     gap: 1em;
+    border: 2px solid var(--primary-color);
+
 }
+
 
 main {
     display: block;
-    grid-template-rows: auto;
 }
+
 
 header img {
     background-color: var(--secondary-color);
     padding: 2rem;
+    border: 2px solid var(--primary-color);
+
 }
+
 
 .hero {
     position: relative;
-    /* margin: 10px auto; */
 }
 
 
 .hero img {
     position: relative;
+    border: 2px solid var(--primary-color);
+
 }
 
 
@@ -96,7 +103,6 @@ h1 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
     background-color: var(--primary-color);
-    opacity: .8;
     position: absolute;
     top: 75px;
     margin: 0;
@@ -104,30 +110,35 @@ h1 {
     width: 100%;
 }
 
+
 .history {
     display: block;
     position: relative;
-    /* height: auto; */
+    background-color: var(--accent1-color);
+    border: 2px solid var(--primary-color);
+
 }
+
 
 .history p {
     background-color: var(--accent1-color);
     display: block;
-    border: 2px solid white;
-    padding-bottom: 13rem;
     padding-top: 11rem;
     padding-left: 20rem;
+    padding-right: 2rem;
 }
 
+
 .history img {
-    display: block;
+    display: flex;
     width: 275px;
     height: 300px;
     position: relative;
-    bottom: 350px;
-    left: 10px;
+    bottom: 120px;
+    left: 1rem;
     padding-right: 50rem;
 }
+
 
 h2 {
     display: block;
@@ -138,9 +149,10 @@ h2 {
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
     position: absolute;
-    bottom: 675px;
+    bottom: 500px;
     width: 100%;
 }
+
 
 h3 {
     display: block;
@@ -150,26 +162,24 @@ h3 {
     font-size: 3em;
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
-    position: relative;
-    bottom: 420px;
+    position: absolute;
+    bottom: 400px;
+    width: 100%;
 }
+
 
 p {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
     background-color: var(--accent1-color);
-    padding: 1rem;
 }
 
-
-.navigation {
-    display: flex;
-}
 
 ul .navigation{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 nav {
     font-size: 2rem;
@@ -178,6 +188,7 @@ nav {
     justify-content: space-evenly;
   }
 
+
 nav a {
     display: block;
     color: var(--nav-link-color);
@@ -185,10 +196,12 @@ nav a {
     padding: 1.5rem;
   }
 
+
 nav a:link, nav a:visited {
     color: var(--nav-hover-background-color);
 }
-  
+
+
 nav a:hover {    
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
@@ -206,6 +219,7 @@ footer {
     display: flex;
 } 
 
+
 footer p {
     padding: 3rem;
     display: flex;
@@ -214,28 +228,37 @@ footer p {
     color: var(--accent2-color);
 }
 
+
 .socialmedia img {
     display: flex;
     justify-content: flex-end;
     width: 30%;
 }
 
+
 .adventure {
     display: flex;
     justify-content: space-evenly;
-    margin: auto;
+    margin-top: 2.5rem;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 5rem;
+    padding: 8rem;
+    padding-top: 8rem;
     gap: 10px;
+    border: 2px solid var(--primary-color);
+    position: relative;
 }
+
 
 figure {
     display: block;
+    
 }
+
 
 .adventure img {
     width: 200px;
     height: 150px;
+    border: 2px solid var(--primary-color);
 }
