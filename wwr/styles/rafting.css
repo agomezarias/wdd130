@@ -154,7 +154,7 @@ h2 {
 }
 
 
-h3 {
+.adventure h2 {
     display: block;
     text-align: center;
     font-family: var(--heading-font);
