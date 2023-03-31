@@ -11,9 +11,6 @@
     --paragraph-font: 'Shantell Sans', serif;
   
     --nav-background-color: #1A1A80;
-    /* --nav-link-color: #8FC3CB; */
-    /* --nav-hover-link-color: #0F0636; */
-    /* --nav-hover-background-color: #DCE1E9;    */
 }
 
 
@@ -85,17 +82,6 @@ select, textarea {
 option {
     font-weight: 600;
 }
-
-/* Style all labels similarly. */
-
-/* label[for] {
-    display: block;
-    font-weight: 700;
-    font-size: 1.2rem;
-} */
-
-/* These can be used to seperate the questions for 
-individual stylings. */
 
 label[for="question1"] {
     display: block;
