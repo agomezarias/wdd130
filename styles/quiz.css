@@ -72,8 +72,15 @@ label, input, button, select, textarea {
     font-family: var(--paragraph-font)
 }
 
-select, textarea {
-    padding: .5rem;
+textarea {
+    padding: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+select {
+    padding: 1rem;
     font-size: 1.1rem;
     font-weight: 700;
     width: 100%;
