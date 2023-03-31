@@ -215,24 +215,27 @@ footer {
 	font-weight: 700;
 	font-style: italic;
     font-size: large;
-    justify-content: space-evenly;
-    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 } 
 
 
 footer p {
-    padding: 3rem;
-    display: flex;
-    justify-content: space-evenly;
+    padding: 1rem;
+    display: grid;
+    /* justify-content: space-evenly; */
     background-color: var(--secondary-color);
     color: var(--accent2-color);
 }
 
 
 .socialmedia img {
-    display: flex;
-    justify-content: flex-end;
+    display: block;
+    /* justify-content: center; */
     width: 30%;
+    bottom: 1000px;
+    /* grid-template-columns: 2fr 1fr 1fr; */
 }
 
 

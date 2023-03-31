@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap');
+
+
+:root {
+    --primary-color: #DCE1E9;
+    --secondary-color: #8FC3CB;
+    --accent1-color: #1A1A80;
+    --accent2-color: #0F0636;
+  
+    --heading-font: 'Tilt Prism', serif;
+    --paragraph-font: 'Shantell Sans', serif;
+  
+    --nav-background-color: #1A1A80;
+    --nav-link-color: #8FC3CB;
+    --nav-hover-link-color: #0F0636;
+    --nav-hover-background-color: #DCE1E9;   
+}
+
+
+*, body, header, h1, footer, fieldset {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 750px;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    font-family: var(--heading-font);
+    font-size: medium;
+    color: var(--accent1-color);
+}
+
+header {
+    margin: 0rem auto;
+    width: 700px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    color: var(--accent2-color);
+    text-align: center;
+    font-weight: 700;
+}
+
+form {
+    width: 750px;
+    padding: 0rem;
+    margin: 0rem auto;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent2-color);
+    border-radius: 1rem;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--accent2-color);
+    border-radius: 1rem;
+    padding: .75rem;
+    /* grid-template-columns: 2fr 1.5fr; */
+}
+
+legend {
+    padding: .35rem;
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+label, input, button, select, textarea {
+    font-family: var(--paragraph-font)
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem; 
+    font-size: large;
+    font-weight: 700;
+}
+
+input, select, textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 90%;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 2rem;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+}
+
+footer {
+    margin: 1rem auto;
+    width: 700px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: .75fr 3fr;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.column2 {
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+}
+
+.column3 {
+    align-items: center;
+    padding: 1rem;
+    width: 600px;
+}
