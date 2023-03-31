@@ -59,7 +59,8 @@ fieldset {
     grid-gap: 1rem;
     margin: 1rem;
     border-radius: 1rem;
-    padding: 0rem;
+    padding: .5rem;
+    border-color: var(--accent2-color);
     
 }
 
@@ -79,36 +80,37 @@ textarea {
     width: 100%;
 }
 
-select {
+select, input {
     padding: 1rem;
     font-size: 1.1rem;
     font-weight: 700;
     width: 100%;
+    text-align: center;
 }
 
 option {
     font-weight: 600;
 }
 
-label[for="question1"] {
+label[for="q1"] {
     display: block;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-label[for="question2"] {
+label[for="q2"] {
     display: block;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-label[for="question3"] {
+label[for="q3"] {
     display: block;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-.question4 {
+label[for="q4"] {
     display: block;
     font-weight: 700;
     font-size: 1.2rem;
