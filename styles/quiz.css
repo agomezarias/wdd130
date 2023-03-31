@@ -79,12 +79,41 @@ option {
     font-weight: 600;
 }
 
-label[id="question"] {
+/* Style all labels similarly. */
+
+/* label[for] {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+} */
+
+/* These can be used to seperate the questions for 
+individual stylings. */
+
+label[for="question1"] {
     display: block;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
+label[for="question2"] {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+label[for="question3"] {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.question4 {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: var(--paragraph-font);
+}
 
 input[type="text"] {
     padding: .5rem;

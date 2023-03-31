@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <label for="Quiz Title">
-            <h1><input type="checkbox" name="quiz" id="quiz" checked>
-            Basic HTML and CSS Quiz</h1>
+        <h1>HTML and CSS Quiz</h1>
+        <label for="quiztitle">
+            <input type="checkbox" name="quiztitle" id="quiztitle" checked>
         </label>
     </header>
     <main>
@@ -19,19 +19,19 @@
             <fieldset>
                 <div class="form-item">
                     <div class="form-item column1">
-                        <label for="question1" id="question">1. What does the acronym CSS stand for?</label>
-                        <input type="text" id="answer1" name="answer1" rows="2" required>
+                        <label for="question1">1. What does the acronym CSS stand for?</label>
+                        <input type="text" id="question1" name="question1" required>
                     </div>
                 </div>
                 <div class="form-item">
                     <div class="form-item column2">
-                        <label for="question2" id="question">2. How are id and class attributes selected in CSS?</label>
-                        <textarea type="text" name="feedback" id="feedback" rows="4" required></textarea>
+                        <label for="question2">2. How are id and class attributes selected in CSS?</label>
+                        <textarea name="question2" id="question2" required></textarea>
                     </div>
                 </div>
                 <div class="form-item">
                     <div class="form-item column3">
-                        <label for="question3" id="question">3. Which of the following is a valid CSS comment?</label>
+                        <label for="question3">3. Which of the following is a valid CSS comment?</label>
                         <select name="question3" id="question3" required>
                             <option value="" selected disabled>Choose One ...</option>
                             <option value="first">*/ comment */</option>
@@ -43,11 +43,11 @@
                 </div>
                 <div class="form-item">
                     <div class="form-item column4">
-                        <label for="question4" id="question">4. What is the bottom margin given in this declaration?</label>
+                        <div class="question4">4. What is the bottom margin given in this declaration?</div>
                             <div class="declaration">
-                                <label for="declaration ">margin: 10px 5px 15px;</label>
+                                <label for="declared">margin: 10px 5px 15px</label>
                             </div>
-                            <select name="question4" id="question4" required>
+                            <select name="declared" id="declared" required>
                                 <option value="" selected disabled>Choose One ...</option>
                                 <option value="first">10px</option>
                                 <option value="second">5px</option>
