@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap');
+
+
+:root {
+    --primary-color: #DCE1E9;
+    --secondary-color: #8FC3CB;
+    --accent1-color: #1A1A80;
+    --accent2-color: #0F0636;
+  
+    --heading-font: 'Tilt Prism', serif;
+    --paragraph-font: 'Shantell Sans', serif;
+  
+    --nav-background-color: #1A1A80;
+    --nav-link-color: #8FC3CB;
+    --nav-hover-link-color: #0F0636;
+    --nav-hover-background-color: #DCE1E9;   
+}
+
+
+*, footer, main, body, header {
+    max-width: 1080px;
+	margin: 1rem auto;
+    padding: 0;
+}
+
+
+body {
+    position: absolute;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background-color: var(--accent1-color);
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: 35% 65%;
+    padding: 1rem;
+    gap: 1em;
+    border: 2px solid var(--primary-color);
+}
+
+
+header img {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border: 2px solid var(--primary-color);
+}
+
+
+.company {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-left: 1rem;
+}
+
+
+.info {
+    display: grid;
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 440px;
+    left: 2rem;
+    height: 375px;
+    justify-content: center;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    font-size: 3em;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2.25rem;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.address {
+    display: flex;
+}
+
+
+.email {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.phone {
+    display: flex;
+    gap: 1rem;
+
+}
+
+
+.info img {
+    display: flex;
+    width: 3rem;
+}
+
+
+.info p {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+
+.employees {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+.workers {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 5rem;
+}
+
+
+.workers img {
+    display: grid;
+    height: 300px;
+}
+
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+
+nav {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+  }
+
+
+nav a {
+    display: flex;
+    color: var(--nav-link-color);
+    text-decoration: none;
+  }
+
+
+.socialmedia {
+    display: flex;
+}
+
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-background-color);
+}
+
+
+nav a:hover {    
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    height: fit-content;
+}
+
+
+footer {
+	border-top: 4px solid var(--accent2-color);
+	color: navy;
+	font-weight: 700;
+	font-style: italic;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+
+} 
+
+
+footer p {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+
+.socialmedia img {
+    display: flex;
+    justify-content: space-around;
+    width: 32%;
+    height: auto;
+}
+
+
+/* Form */
+
+form {
+    padding: 0rem;
+    margin: 0rem auto;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent2-color);
+    border-radius: 1rem;
+}
+
+fieldset {
+    display: block;
+    margin: 1rem;
+    border: 2px solid var(--accent2-color);
+    border-radius: 1rem;
+    padding: .75rem;
+}
+
+.form-item {
+    grid-gap: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--accent2-color);
+    border-radius: 1rem;
+    padding: .75rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-itemcolumn1 {
+    align-items: center;
+    display: flex;
+}
+
+
+input[id="useremail"], input[id="fullname"] {
+    height: 2rem;
+    font-size: 1.4rem;
+}
+
+
+label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--accent1-color);
+}
+
+
+.form-item2 {
+    display: inline-flex;
+    grid-gap: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+
+input[type="radio"] {
+    display: block;
+    padding-left: 2rem;
+}
+
+.radiobuttons label {
+    display: block;
+    padding-left: 5rem;
+}
+
+
+legend {
+    padding: 1rem;
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 2.0rem;
+    border-style:double ;
+    border-radius: 1rem;
+}
+
+label, input, button, select, textarea {
+    font-family: var(--paragraph-font)
+}
+
+label.form-item {
+    display: flex;
+    padding-right: 1rem; 
+    font-weight: 700;
+}
+
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+button {
+    display: flex; 
+    margin: 2rem;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    padding-left: 475px;
+    padding-right: 475px;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+}
+
+
+textarea[id="feedback"] {
+    width: 65%;
+    font-size: medium;
+}
