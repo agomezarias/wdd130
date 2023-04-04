@@ -314,6 +314,7 @@ input[type="checkbox"] {
 
 button {
     display: flex; 
+    justify-content: center;
     margin: 2rem;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
@@ -321,8 +322,8 @@ button {
     border-radius: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
-    padding-left: 475px;
-    padding-right: 475px;
+    padding-left: 345px;
+    padding-right: 345px;
 }
 
 button:hover {
