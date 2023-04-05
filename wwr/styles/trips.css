@@ -49,6 +49,7 @@ p {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
+    font-size: 1.5rem;
 }
 
 
@@ -56,8 +57,8 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: var(--heading-font);
-    color: var(--primary-color);
-    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
     font-size: 3em;
     width: 100%;
     margin-top: 2rem;
@@ -65,14 +66,14 @@ h1 {
 }
 
 
-.calltoaction img {
+.attention img {
     background-color: var(--secondary-color);
     width: 100%;
     height: auto;
 }
 
 
-.calltoaction h1 {
+.attention h1 {
     position: absolute;
     top: 500px;
     opacity: .7;
@@ -87,16 +88,20 @@ h1 {
 }
 
 
-button[id="allbookings"] {
+.button[id="allbookings"] {
     display: flex;
     justify-content: center;
+    width: 50%;
 }
+
 
 hr {
     color: var(--accent2-color);
     background-color: var(--accent2-color);
-    height: .1rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
 }
+
 
 h2 {
     display: flex;
@@ -107,6 +112,7 @@ h2 {
     text-decoration: underline;
 }
 
+
 h3 {
     display: flex;
     align-items: center;
@@ -116,6 +122,7 @@ h3 {
     text-decoration: underline;
 }
 
+
 .trips img {
     width: 275px;
     height: auto;
@@ -124,20 +131,38 @@ h3 {
 
 .alldaytrips {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    align-items: center;
+    grid-template-columns: 32% 32% 32%;
+
+    gap: 1.3rem;
+}
+
+
+.trip1, .trip2, .trip3,
+.trip4, .trip5 {
+    border: 2px solid var(--accent2-color);
+    padding: .3rem;
 }
 
 
 .halfdaytrips {
     display: grid;
     grid-template-columns: 50% 50%;
-    align-items: center;
+    gap: 1.3rem;
+    max-width: 67%;
 }
+
 
 figure {
     display: block;
     text-align: center;
+}
+
+
+figcaption {
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
 }
 
 
@@ -200,9 +225,8 @@ footer p {
 }
 
 
-
-button {
-    display: flex; 
+.button {
+    display: flex;
     justify-content: center;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
@@ -210,8 +234,29 @@ button {
     border-radius: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
+    text-decoration: none;
+    
 }
 
-button:hover {
+
+.button:hover {
     background-color: var(--accent1-color);
 }
+
+
+/* Pricing Table */
+table {
+    font-family: var(--paragraph-font);
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid var(--accent2-color);
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--primary-color);
+  }

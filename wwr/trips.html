@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Rafting Site Trips Page | Alberto Gomez Arias</title>
+    <title>WDD130 | Alberto Gomez Arias | Rafting Site Trips Page</title>
     <meta name="description" content="White Water Rafting Company Trips Page.">
     <meta name="author" content="Alberto Gomez">
     <link rel="stylesheet" href="styles/trips.css" >
@@ -19,7 +19,7 @@
             </nav>
       </header>
       <main>
-            <section class="calltoaction">
+            <section class="attention">
                     <div class="attentionarea">
                         <img src="images/tripsbackground.jpg" alt="Background rafting image">
                         <h1>Hurry and Book Now!!!</h1>
@@ -31,7 +31,7 @@
                             and scheduled. Thank you for your business. 
                         </p>
                     </div>
-                    <button type="submit" name="allbookings" id="allbookings">Book Now</button>
+                    <a href="https://agomezarias.github.io/wdd130/wwr/contact.html" class="button" id="allbookings">Contact Us and Book Here</a>
             </section>
             <hr>
             <section class="trips">
@@ -42,23 +42,33 @@
                             <img src="images/trips1.jpg" alt="Rafting image 1">
                             <figcaption>1 Day Trip</figcaption>
                         </figure>
-                        <button type="submit" name="submit1" id="submit1">Book Now</button>
+                        <p>
+                            Come with us on this 1 day trip filled with fun and adventure. A one day trip includes a bag lunch making it 
+                            to where all you need to bring is your beverage of choice along with drinking water. 
+                        </p>
                     </div>
                     <div class="trip2">
                         <figure>
                             <img src="images/trips2.jpg" alt="Rafting image 2">
                             <figcaption>2 Day Trip</figcaption>
                         </figure>
-                        <button type="submit" name="submit2" id="submit2">Book Now</button>
+                        <p>
+                            This 2 day trip is filled with fun and adventure. A two day trip includes lunch and dinner on the first
+                            day, and breakfast, lunch, and dinner on the second. Lodging provided at our cabin rest areas.
+                        </p>
                     </div>
                     <div class="trip3">
                         <figure>
                             <img src="images/trips3.jpg" alt="Rafting image 3">
                             <figcaption>3 Day Trip</figcaption>
                         </figure>
-                        <button type="submit" name="submit3" id="submit3">Book Now</button>
+                        <p>
+                            On the 3 day trip you are sure to have a great time. A three day trip includes lunch and dinner on the first
+                            day, and breakfast, lunch, and dinner on the second and third. Lodging provided at our cabin rest areas.
+                        </p>
                     </div>
                 </div>
+            <hr>
                 <h2>1/2 Day Trips</h2>
                 <div class="halfdaytrips">
                     <div class="trip4">
@@ -66,17 +76,69 @@
                         <img src="images/trips4.jpg" alt="Rafting image 4">
                         <figcaption>3 Hour Trip</figcaption>
                         </figure>
-                        <button type="submit" name="submit4" id="submit4">Book Now</button>
+                        <p>
+                            Great for learning how to river raft and to be able to get the basics down before longer trips.
+                        </p>
                     </div>
                     <div class="trip5">
                         <figure>
                         <img src="images/trips5.jpg" alt="Rafting image 5">
                         <figcaption>6 Hour Trip</figcaption>
                         </figure>
-                        <button type="submit" name="submit5" id="submit5">Book Now</button>
+                        <p>
+                            Best for a day full of fun where you are sure to hit some good rapids and a great swimming area for enjoyment.
+                        </p>
                     </div>
                 </div>
             </section>
+            <hr>
+            <section class="pricingtable">
+                <h2>Pricing Table</h2>
+                <table>
+                    <tr>
+                      <th>TRIP TYPE</th>
+                      <th>$ PRICING $ * children 12 & under *</th>
+                      <th>BOOK TRIP</th>
+                    </tr>
+                    <tr>
+                      <td>1 DAY TRIP</td>
+                      <td>Adults: $155 / Children: $105</td>
+                      <td>
+                        <input type="checkbox" id="1day" name="1day">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2 DAY TRIP</td>
+                      <td>Adults: $255 / Children: $205</td>
+                      <td>
+                        <input type="checkbox" id="2day" name="2day">
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>3 DAY TRIP</td>
+                        <td>Adults: $355 / Children: $305</td>
+                        <td>
+                            <input type="checkbox" id="3day" name="3day">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3 HOUR TRIP</td>
+                        <td>Adults: $75 / Children: $55</td>
+                        <td>
+                            <input type="checkbox" id="3hourday" name="3hourday">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6 HOUR TRIP</td>
+                        <td>Adults: $105 / Children: $75</td>
+                        <td>
+                            <input type="checkbox" id="6hourday" name="6hourday">
+                        </td>
+                      </tr>
+                  </table>
+            </section>
+            <a href="https://agomezarias.github.io/wdd130/wwr/contact.html" class="button" id="allbookings2">Contact Us and Book Here</a>
       </main>
   <footer>
       <p>©2023 💧 White Water Adventures 💧 Alberto Gomez Arias</p>
