@@ -43,6 +43,12 @@ header {
 }
 
 
+header img {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border: 2px solid var(--primary-color);
+}
+
 p {
     display: flex;
     align-items: center;
