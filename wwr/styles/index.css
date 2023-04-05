@@ -49,13 +49,12 @@ header img {
     border: 2px solid var(--primary-color);
 }
 
-.attention p, .trips p, .pricingtable p {
+p {
     display: flex;
     align-items: center;
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
-    font-size: 1.5rem;
 }
 
 
@@ -63,7 +62,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     background-color: var(--accent1-color);
     font-size: 3em;
     width: 100%;
@@ -71,34 +70,6 @@ h1 {
     margin-bottom: 2.25rem;
 }
 
-
-.attention img {
-    background-color: var(--secondary-color);
-    width: 100%;
-    height: auto;
-}
-
-
-.attention h1 {
-    position: absolute;
-    top: 775px;
-    opacity: .7;
-}
-
-
-.bookinginfo p {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    padding-bottom: 2rem;
-}
-
-
-.button[id="allbookings"] {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
 
 
 hr {
@@ -113,7 +84,7 @@ h2 {
     display: flex;
     justify-content: center;
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
     font-size: 2em;
     text-decoration: underline;
 }
@@ -122,10 +93,9 @@ h2 {
 h3 {
     display: flex;
     align-items: center;
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
     color: var(--accent1-color);
     font-size: 2em;
-    text-decoration: underline;
 }
 
 
