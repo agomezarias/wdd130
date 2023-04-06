@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Prism&display=swap');
-
+@keyframes glowing {
+    0% {
+      background-color: var(--primary-color);
+      box-shadow: 0 0 5px var(--primary-color);
+    }
+    50% {
+      background-color: var(--secondary-color);
+      box-shadow: 0 0 20px var(--secondary-color);
+    }
+    100% {
+      background-color: var(--accent2-color);
+      box-shadow: 0 0 5px var(--accent2-color);
+    }
+  }
 
 :root {
     --primary-color: #DCE1E9;
@@ -178,7 +191,6 @@ footer p {
     border: none;
     border-radius: 1rem;
     font-size: 1.5rem;
-    text-decoration: none;
 }
 
 
@@ -279,7 +291,6 @@ button:hover {
 
 .booking button[id="terms"] {
     display: flex;
-    /* background-color: var(--secondary-color); */
     color: var(--primary-color);
     cursor: pointer;
     border-radius: 0;
@@ -322,15 +333,15 @@ h4 {
 /*  Call to action */
 
 
+
+
 .button[id="allbookings2"] {
-    display: flex;
     align-items: center;
-    background-color: var(--accent2-color);
     border-radius: 1rem;
     border: none;
-    color: var(--secondary-color);
     cursor: pointer;
     font-family: var(--heading-font);
+    color: var(--primary-color);
     font-size: 2.5rem;
     font-weight: 700;
     padding-top: 3rem;
@@ -338,23 +349,7 @@ h4 {
     width: 100%;
     text-align: center;
     text-decoration: none;
-    animation: glowing 1300ms infinite;
-  }
-
-
-  @keyframes glowing {
-    0% {
-      background-color: var(--primary-color);
-      box-shadow: 0 0 5px var(--primary-color);
-    }
-    50% {
-      background-color: var(--secondary-color);
-      box-shadow: 0 0 20px var(--secondary-color);
-    }
-    100% {
-      background-color: var(--accent1-color);
-      box-shadow: 0 0 5px var(--accent1-color);
-    }
+    animation: glowing 1000ms infinite;
   }
 
 
