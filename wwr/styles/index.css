@@ -5,8 +5,8 @@
       box-shadow: 0 0 5px var(--primary-color);
     }
     50% {
-      background-color: var(--secondary-color);
-      box-shadow: 0 0 20px var(--secondary-color);
+      background-color: var(--glowing-color);
+      box-shadow: 0 0 20px var(--glowing-color);
     }
     100% {
       background-color: var(--accent2-color);
@@ -28,6 +28,7 @@
     --nav-hover-link-color: #0F0636;
     --nav-hover-background-color: #DCE1E9;
     --nav-link-color2: rgb(2, 107, 20);
+    --glowing-color: rgb(94, 17, 17);
 }
 
 
