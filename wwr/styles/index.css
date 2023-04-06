@@ -13,7 +13,8 @@
     --nav-background-color: #1A1A80;
     --nav-link-color: #8FC3CB;
     --nav-hover-link-color: #0F0636;
-    --nav-hover-background-color: #DCE1E9;   
+    --nav-hover-background-color: #DCE1E9;
+    --nav-link-color2: rgb(2, 107, 20);
 }
 
 
@@ -71,6 +72,9 @@ h1 {
 }
 
 
+.hero img {
+    width: 100%;
+}
 
 hr {
     color: var(--accent2-color);
@@ -80,13 +84,21 @@ hr {
 }
 
 
+.booking {
+    background-color: var(--accent1-color);
+    padding-bottom: 2rem;
+}
+
 h2 {
     display: flex;
     justify-content: center;
     font-family: var(--heading-font);
     color: var(--primary-color);
-    font-size: 2em;
-    text-decoration: underline;
+    background-color: var(--accent1-color);
+    font-size: 3em;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2.25rem;
 }
 
 
@@ -96,49 +108,6 @@ h3 {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     font-size: 2em;
-}
-
-
-.trips img {
-    width: 275px;
-    height: auto;
-}
-
-
-.alldaytrips {
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
-
-    gap: 1.3rem;
-}
-
-
-.trip1, .trip2, .trip3,
-.trip4, .trip5 {
-    border: 2px solid var(--accent2-color);
-    padding: .3rem;
-}
-
-
-.halfdaytrips {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 1.3rem;
-    max-width: 67%;
-}
-
-
-figure {
-    display: block;
-    text-align: center;
-}
-
-
-figcaption {
-    font-family: var(--paragraph-font);
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
 }
 
 
@@ -208,10 +177,8 @@ footer p {
     color: var(--secondary-color);
     border: none;
     border-radius: 1rem;
-    padding: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
-    
 }
 
 
@@ -219,20 +186,316 @@ footer p {
     background-color: var(--accent1-color);
 }
 
+/* Newsletter */
 
-/* Pricing Table */
-table {
-    font-family: var(--paragraph-font);
-    font-weight: 600;
+form {
+    width: 90%;
+    padding: 0rem;
+    margin: 0rem auto;
+    background-color: var(--secondary-color);
+    border: .5rem dotted var(--accent1-color);
+    border-radius: 1rem;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    margin: 1rem;
+    border: 2px solid var(--accent2-color);
+    border-radius: 1rem;
+
+}
+
+legend {
+    padding: .45rem;
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+label, input, button, select, textarea {
+    font-family: var(--paragraph-font)
+}
+
+label {
+    text-align: right;
+    font-size: large;
+    font-weight: 700;
+}
+
+input, textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 90%;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 2rem;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column2 {
+    grid-template-columns: .75fr 3fr;
+    align-items: center;
+}
+
+.column1 {
+    display: inline-flex;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.column3 {
+    align-items: center;
+    width: 600px;
+}
+
+.column1 input[id="agreement"] {
+    cursor: pointer;
+}
+
+
+.booking button[id="terms"] {
+    display: flex;
+    /* background-color: var(--secondary-color); */
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 0;
+    border: 0;
+    text-decoration:underline ;
+    padding: 0 ;
+    margin-left: .5rem;
+    font-size: 1.3rem;
+}
+
+
+.booking button:hover {
+    background-color: var(--accent1-color);
+}
+
+.booking img {
+    display: flex;
+    width: 200px;
+}
+
+.formheader {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
     width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid var(--accent2-color);
+}
+
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    font-size: 2.5rem;
+    width: 95%;
+}
+
+
+/*  Call to action */
+
+
+.button[id="allbookings2"] {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent2-color);
+    border-radius: 1rem;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
     text-align: center;
-    padding: 8px;
+    text-decoration: none;
+    animation: glowing 1300ms infinite;
   }
-  
-  tr:nth-child(even) {
+
+
+  @keyframes glowing {
+    0% {
+      background-color: var(--primary-color);
+      box-shadow: 0 0 5px var(--primary-color);
+    }
+    50% {
+      background-color: var(--secondary-color);
+      box-shadow: 0 0 20px var(--secondary-color);
+    }
+    100% {
+      background-color: var(--accent1-color);
+      box-shadow: 0 0 5px var(--accent1-color);
+    }
+  }
+
+
+  .button[id="tripsbutton"] {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent1-color);
+    border-radius: 1rem;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+/*  Dropdown items purpose and what we offer */
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2rem;
+}
+
+
+/* First Item Dropdown */
+
+.dropbtn {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: var(--accent1-color);
+    width: 1050px;
+    border: 1rem solid var(--primary-color);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.dropdown-content img {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+}
+
+.dropdown-content h2{
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.dropdown-content p {
+    width: 90%;
+    padding: 1rem;
+    border: 4px solid var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--accent2-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
     background-color: var(--primary-color);
-  }
+}
+
+
+/* second item dropdown */
+
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: relative;
+    background-color: var(--accent1-color);
+    width: 1050px;
+    border: 1rem solid var(--primary-color);
+    right: 540px;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.dropdown-content2 img {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+}
+
+.dropdown-content2 h2{
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.dropdown-content2 p {
+    width: 90%;
+    padding: 1rem;
+    border: 4px solid var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.dropdown-content2 a:hover {
+    background-color: var(--accent2-color);
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown2:hover .dropbtn {
+    background-color: var(--primary-color);
+}
