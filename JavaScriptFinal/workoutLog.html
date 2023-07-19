@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> CSE 121B| Alberto Gomez Arias | Final Project Workout App</title>
+    <meta name="description" content="Workout Logger for final project">
+    <meta name="author" content="Alberto Gomez">
+    <link rel="stylesheet" type="text/css" href="styles/workoutlog.css">
+</head>
+
+<body>
+    <header>
+    <h1>Workout App</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="logForm">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="workout">Workout:</label>
+                <input type="text" id="workout" required>
+
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" required>
+
+                <input type="submit" value="Log Workout">
+            </form>
+            <h2>Logged Workouts</h2>
+            <table id="loggedTable">
+                <thead>
+                    <tr>
+                        <th id="date">Date</th>
+                        <th id="excercise">Workout</th>
+                        <th id="time">Duration</th>
+                        <th id="delete">X</th>
+                    </tr>
+                </thead>
+                <tbody id="loggedTableBody"></tbody>
+            </table>
+
+        </div>
+
+        <div id="muscleGroupContainer">
+            <label for="muscleGroupSelect">Select Muscle Group:</label>
+            <select id="muscleGroupSelect">
+                <option value="initialDropdown">Select Muscle</option>
+                <option value="abdominals">Abdominals</option>
+                <option value="biceps">Biceps</option>
+                <option value="calves">Calves</option>
+                <option value="chest">Chest</option>
+                <option value="forearms">Forearms</option>
+                <option value="glutes">Glutes</option>
+                <option value="hamstrings">Hamstrings</option>
+                <option value="lats">Lats</option>
+                <option value="quadriceps">Quadriceps</option>
+                <option value="triceps">Triceps</option>
+            </select>
+            <button id="muscleGroupSubmit">Submit</button>
+        </div>
+        <div id="resultsContainer"></div> <!-- New results container -->
+        </div>
+
+        <script src="scripts/workoutlog.js"></script>
+    </main>
+</body>
+
+    <footer>
+        <p>©2023 💪 Workout Logging 💪 Alberto Gomez Arias</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+        </nav>
+    </footer>
+
+</html>
